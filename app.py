@@ -96,14 +96,14 @@ def evaluate(students_df, answer_keys):
 
 
 # ---------- Streamlit UI ----------
-st.set_page_config(page_title="Dynamic Student Evaluation Tool", layout="wide")
+st.set_page_config(page_title="Scholarship Data Evaluation Tool", layout="wide")
 
-st.title("📊 Dynamic Student Evaluation System")
-st.markdown("Upload student responses and corresponding answer keys (Excel or CSV) to automatically evaluate marks.")
+st.title("📊 Scholarship Data Evaluation Tool")
+st.markdown("Upload Answer Options File , Upload applicable Answer Keys and Extract the Evaluated Answer Marks File")
 
 # --- Upload Student File ---
-st.header("Step 1: Upload Student Response File")
-student_file = st.file_uploader("Upload the student file (CSV or Excel)", type=["csv", "xls", "xlsx"])
+st.header("Step 1: Upload Answer Options File")
+student_file = st.file_uploader("Upload the Answer Options (CSV or Excel)", type=["csv", "xls", "xlsx"])
 
 # --- Input Classes and Papers ---
 st.header("Step 2: Enter Class & Paper Count")
@@ -166,3 +166,4 @@ if st.button("🚀 Evaluate Now"):
 
 st.markdown("---")
 st.caption("Developed by Omkar • Excel-Compatible Dynamic Evaluation Tool")
+
